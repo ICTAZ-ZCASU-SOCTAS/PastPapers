@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-label="Contribute in four steps: scan, check, name, pull request">
+  <title>How to contribute</title>
+  <style>
+    text { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .card { animation: pop 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .c2 { animation-delay: 2s; } .c3 { animation-delay: 4s; } .c4 { animation-delay: 6s; }
+    @keyframes pop { 0%,100% { transform: translateY(0); } 6% { transform: translateY(-8px); } 14% { transform: translateY(0); } }
+    .ring { animation: ring 8s ease-in-out infinite; }
+    .r2 { animation-delay: 2s; } .r3 { animation-delay: 4s; } .r4 { animation-delay: 6s; }
+    @keyframes ring { 0%,100% { stroke-opacity: 0.25; } 6% { stroke-opacity: 1; } 20% { stroke-opacity: 0.25; } }
+  </style>
+  <rect width="1200" height="230" rx="18" fill="#0b1220"/>
+
+  <path d="M190 105 H1010" stroke="#1e2a44" stroke-width="3" stroke-dasharray="8 8">
+    <animate attributeName="stroke-dashoffset" values="0;-32" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <circle r="6" cy="105" fill="#5eead4">
+    <animate attributeName="cx" values="190;1010" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <g text-anchor="middle">
+    <g class="card">
+      <rect class="ring" x="70" y="40" width="240" height="150" rx="14" fill="#111c33" stroke="#5eead4" stroke-width="2"/>
+      <text class="mono" x="190" y="82" font-size="28" font-weight="700" fill="#5eead4">01</text>
+      <text x="190" y="118" font-size="20" font-weight="700" fill="#e2e8f0">Scan</text>
+      <text x="190" y="146" font-size="14" fill="#94a3b8">One PDF per paper,</text>
+      <text x="190" y="166" font-size="14" fill="#94a3b8">all pages, upright</text>
+    </g>
+    <g class="card c2">
+      <rect class="ring r2" x="343" y="40" width="240" height="150" rx="14" fill="#111c33" stroke="#60a5fa" stroke-width="2"/>
+      <text class="mono" x="463" y="82" font-size="28" font-weight="700" fill="#60a5fa">02</text>
+      <text x="463" y="118" font-size="20" font-weight="700" fill="#e2e8f0">Check</text>
+      <text x="463" y="146" font-size="14" fill="#94a3b8">Open every file before</text>
+      <text x="463" y="166" font-size="14" fill="#94a3b8">you upload it</text>
+    </g>
+    <g class="card c3">
+      <rect class="ring r3" x="617" y="40" width="240" height="150" rx="14" fill="#111c33" stroke="#818cf8" stroke-width="2"/>
+      <text class="mono" x="737" y="82" font-size="28" font-weight="700" fill="#818cf8">03</text>
+      <text x="737" y="118" font-size="20" font-weight="700" fill="#e2e8f0">Name</text>
+      <text x="737" y="146" font-size="14" fill="#94a3b8">CODE TITLE TYPE.pdf</text>
+      <text x="737" y="166" font-size="14" fill="#94a3b8">in the right folder</text>
+    </g>
+    <g class="card c4">
+      <rect class="ring r4" x="890" y="40" width="240" height="150" rx="14" fill="#111c33" stroke="#a78bfa" stroke-width="2"/>
+      <text class="mono" x="1010" y="82" font-size="28" font-weight="700" fill="#a78bfa">04</text>
+      <text x="1010" y="118" font-size="20" font-weight="700" fill="#e2e8f0">Pull request</text>
+      <text x="1010" y="146" font-size="14" fill="#94a3b8">Fork, commit, and open</text>
+      <text x="1010" y="166" font-size="14" fill="#94a3b8">a PR to main</text>
+    </g>
+  </g>
+</svg>

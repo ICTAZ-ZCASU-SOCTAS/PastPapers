@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="PastPapers - ZCAS University School of Computing past examination papers">
+  <title>PastPapers</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c33"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4">
+        <animate attributeName="stop-color" values="#5eead4;#60a5fa;#a78bfa;#5eead4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#60a5fa">
+        <animate attributeName="stop-color" values="#60a5fa;#a78bfa;#5eead4;#60a5fa" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1e2a44" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="340" rx="18"/></clipPath>
+    <clipPath id="type">
+      <rect x="0" y="0" width="0" height="340">
+        <animate attributeName="width" values="0;1200;1200;0" keyTimes="0;0.35;0.85;1" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1;0.4 0 0.2 1"/>
+      </rect>
+    </clipPath>
+    <g id="sheet">
+      <rect width="54" height="70" rx="5" fill="#16233f" stroke="#2f4a7a" stroke-width="1.5"/>
+      <rect x="10" y="12" width="34" height="4" rx="2" fill="#5eead4" opacity="0.8"/>
+      <rect x="10" y="24" width="28" height="3" rx="1.5" fill="#3b5a8f"/>
+      <rect x="10" y="33" width="32" height="3" rx="1.5" fill="#3b5a8f"/>
+      <rect x="10" y="42" width="22" height="3" rx="1.5" fill="#3b5a8f"/>
+      <rect x="10" y="51" width="30" height="3" rx="1.5" fill="#3b5a8f"/>
+    </g>
+  </defs>
+
+  <style>
+    .float { animation: float 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .d1 { animation-delay: -1s; } .d2 { animation-delay: -2.5s; } .d3 { animation-delay: -4s; } .d4 { animation-delay: -5s; }
+    @keyframes float { 0%,100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-14px) rotate(6deg); } }
+    .scan { animation: scan 4s linear infinite; }
+    @keyframes scan { 0% { transform: translateY(-40px); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(380px); opacity: 0; } }
+    text { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)" opacity="0.6"/>
+    <circle cx="600" cy="170" r="320" fill="url(#glow)">
+      <animate attributeName="r" values="280;340;280" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <rect class="scan" x="0" y="0" width="1200" height="2" fill="#5eead4" opacity="0.5"/>
+
+    <use href="#sheet" x="70" y="60" class="float"/>
+    <use href="#sheet" x="170" y="200" class="float d1"/>
+    <use href="#sheet" x="1060" y="50" class="float d2"/>
+    <use href="#sheet" x="980" y="210" class="float d3"/>
+    <use href="#sheet" x="1110" y="190" class="float d4" opacity="0.6"/>
+    <use href="#sheet" x="40" y="230" class="float d2" opacity="0.6"/>
+
+    <g>
+      <text x="600" y="78" text-anchor="middle" font-size="15" letter-spacing="5" fill="#7c8db5" font-weight="600">ICTAZ  ZCASU  SOCTAS</text>
+      <text x="600" y="168" text-anchor="middle" font-size="86" font-weight="800" fill="url(#title)">PastPapers</text>
+    </g>
+
+    <g clip-path="url(#type)">
+      <text class="mono" x="600" y="222" text-anchor="middle" font-size="22" fill="#cbd5e1">&gt; School of Computing, Technology &amp; Applied Sciences</text>
+    </g>
+
+    <g font-size="15" font-weight="600" text-anchor="middle">
+      <g>
+        <rect x="390" y="256" width="130" height="34" rx="17" fill="#132a3a" stroke="#5eead4" stroke-opacity="0.5"/>
+        <text x="455" y="278" fill="#5eead4">Undergraduate</text>
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <rect x="535" y="256" width="130" height="34" rx="17" fill="#13203f" stroke="#60a5fa" stroke-opacity="0.5"/>
+        <text x="600" y="278" fill="#60a5fa">Postgraduate</text>
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </g>
+      <g>
+        <rect x="680" y="256" width="130" height="34" rx="17" fill="#1d1a3f" stroke="#a78bfa" stroke-opacity="0.5"/>
+        <text x="745" y="278" fill="#a78bfa">NCC</text>
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" begin="2s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  </g>
+</svg>
